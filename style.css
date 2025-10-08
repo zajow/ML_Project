@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 20px;
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fd1;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  white-space: pre-line;
+  font-size: 18px;
+}
+
+.percentage {
+  font-size: 48px;
+  font-weight: 900;
+  color: #0077ff;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.status.approved {
+  color: #28a745;
+}
+
+.status.denied {
+  color: #dc3545;
+}
+
+.status.uncertain {
+  color: #ffc107;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  border: 1px solid #ffcccc;
+  color: #d63384;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.success-message {
+  background-color: #e6ffe6;
+  border: 1px solid #ccffcc;
+  color: #198754;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+input:invalid {
+  border-color: #dc3545;
+}
+
+input:valid {
+  border-color: #28a745;
+}
